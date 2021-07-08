@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="form-wrapper">
+    <form class="form form--index" method="post">
+      <ul>
+        <li>
+          <h2>Info</h2>
+          <label class="form__label">Enter your email address
+            <input type="email" placeholder="team@checkforpatent.com">
+          </label>
+        </li>
+        <li>
+          <h2>Product 1</h2>
+          <label class="form__label">Enter main keyword for the product
+            <input type="search" placeholder="for example, sylicon wine cup">
+          </label>
+          <label class="form__label">Enter link to the similar product as a reference
+            <input type="search" placeholder="https://...">
+          </label>
+        </li>
+      </ul>
+      <a href="#" class="form__button-link js-add-product">Add more products</a>
+      <p>We offer discount up to 36% for multiple checks</p>
+      <div class="button-wrapper">
+        <button class="button button--form" type="submit">Submit and Pay 24.99 USD</button>
+        <p>Secure payment with Stripe</p>
+      </div>
+    </form>
+  </div>
+
+  <div class="form-wrapper modal js-modal">
+    <form class="form form--radio" method="post">
+      <h2>Adding more products</h2>
+      <ul>
+        <li>
+          <input class="form__input form__input--radio visually-hidden" type="radio" id="five-product" value="five-product" name="products" checked>
+          <label class="form__label form__label--radio" for="five-product">
+            <span class="form__radio-icon-wrapper">
+              <span class="form__radio-icon-checked"></span>
+            </span>
+            <span class="form__radio-span">
+              <span class="form__radio-text">5 products for 80 usd / 16$ for each</span>
+              <span class="form__radio-small-text">You safe 36% on each patent check </span>
+            </span>
+          </label>
+        </li>
+        <li>
+          <input class="form__input form__input--radio visually-hidden" type="radio" id="four-product" value="four-product" name="products">
+          <label class="form__label form__label--radio" for="four-product">
+            <span class="form__radio-icon-wrapper">
+              <span class="form__radio-icon-checked"></span>
+            </span>
+            <span class="form__radio-span">
+              <span class="form__radio-text">4 products for 72 usd / 18$ for each</span>
+              <span class="form__radio-small-text">You safe 28% on each patent check </span>
+            </span>
+          </label>
+        </li>
+        <li>
+          <input class="form__input form__input--radio visually-hidden" type="radio" id="three-product" value="three-product" name="products">
+          <label class="form__label form__label--radio" for="three-product">
+            <span class="form__radio-icon-wrapper">
+              <span class="form__radio-icon-checked"></span>
+            </span>
+            <span class="form__radio-span">
+              <span class="form__radio-text">3 products for 60 usd / 20$ for each</span>
+              <span class="form__radio-small-text">You safe 20% on each patent check </span>
+            </span>
+          </label>
+        </li>
+        <li>
+          <input class="form__input form__input--radio visually-hidden" type="radio" id="two-product" value="two-product" name="products">
+          <label class="form__label form__label--radio" for="two-product">
+            <span class="form__radio-icon-wrapper">
+              <span class="form__radio-icon-checked"></span>
+            </span>
+            <span class="form__radio-span">
+              <span class="form__radio-text">2 products for 44 usd / 22$ for each</span>
+              <span class="form__radio-small-text">You safe 12% on each patent check </span>
+            </span>
+          </label>
+        </li>
+        <li>
+          <input class="form__input form__input--radio visually-hidden" type="radio" id="one-product" value="one-product" name="products">
+          <label class="form__label form__label--radio" for="one-product">
+            <span class="form__radio-icon-wrapper">
+              <span class="form__radio-icon-checked"></span>
+            </span>
+            <span class="form__radio-text">
+              1 product for 24.99 usd
+            </span>
+          </label>
+        </li>
+      </ul>
+      <div class="button-wrapper">
+        <button class="button button--form" type="submit">Continue</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

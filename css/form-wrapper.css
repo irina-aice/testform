@@ -1,0 +1,7 @@
+.form-wrapper {
+  max-width: 440px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 60px var(--color-light-grey);
+  border-radius: 0 50px 50px 50px;
+  box-sizing: border-box;
+}
