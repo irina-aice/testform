@@ -1,0 +1,16 @@
+.product {}
+.product__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.product__title {
+  font-weight: 700;
+}
+.product__remove {
+  padding: 5px;
+  margin-left: 5px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}

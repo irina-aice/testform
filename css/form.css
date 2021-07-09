@@ -19,6 +19,7 @@
 }
 
 .form__button-link {
+  margin-top: 25px;
   position: relative;
   display: inline-block;
   padding-right: 20px;
@@ -67,11 +68,21 @@
   box-sizing: border-box;
 }
 
+.form__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form__text {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
 .form__label--radio {
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-column-gap: 12px;
-
 }
 
 .form__radio-span {
@@ -124,4 +135,10 @@
 
 .form--radio li:hover {
   background-color: var(--color-grey);
+}
+
+.form__secure {
+  margin-top: 11px;
+  margin-bottom: 0;
+  color: var(--color-dark-grey);
 }

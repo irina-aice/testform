@@ -3,9 +3,22 @@
 (function () {
   const addProduct = document.querySelector('.js-add-product');
   const modal = document.querySelector('.js-modal');
+  const productTemplate = document.querySelector('#product-template').content;
+  const productList = document.querySelector('.js-product-list');
+  const modalForm = document.querySelector('.js-modal-form');
 
   addProduct.addEventListener('click', function (evt) {
     evt.preventDefault();
-    modal.classList.add('modal-show');
+    modal.setAttribute('data-state', 'open')
+  })
+
+  modalForm.addEventListener('submit', function (evt) {
+    evt.preventDefault();
+
+    //
+    const product = productTemplate.cloneNode(true);
+    productList.appendChild(product);
+    //
+    modal.setAttribute('data-state', 'close');
   })
 })();
