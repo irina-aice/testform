@@ -40,7 +40,8 @@
       <p>Adding more products</p>
       <ul>
         <li class="form__item">
-          <input class="form__input form__input--radio visually-hidden" type="radio" id="five-product" value="five-product" name="products" checked>
+          <input class="form__input form__input--radio visually-hidden"
+                 type="radio" id="five-product" value="5" name="products" checked>
           <label class="form__label form__label--radio" for="five-product">
             <span class="form__radio-icon-wrapper">
               <span class="form__radio-icon-checked"></span>
@@ -52,7 +53,8 @@
           </label>
         </li>
         <li class="form__item">
-          <input class="form__input form__input--radio visually-hidden" type="radio" id="four-product" value="four-product" name="products">
+          <input class="form__input form__input--radio visually-hidden"
+                 type="radio" id="four-product" value="4" name="products">
           <label class="form__label form__label--radio" for="four-product">
             <span class="form__radio-icon-wrapper">
               <span class="form__radio-icon-checked"></span>
@@ -64,7 +66,8 @@
           </label>
         </li>
         <li class="form__item">
-          <input class="form__input form__input--radio visually-hidden" type="radio" id="three-product" value="three-product" name="products">
+          <input class="form__input form__input--radio visually-hidden"
+                 type="radio" id="three-product" value="3" name="products">
           <label class="form__label form__label--radio" for="three-product">
             <span class="form__radio-icon-wrapper">
               <span class="form__radio-icon-checked"></span>
@@ -76,7 +79,8 @@
           </label>
         </li>
         <li class="form__item">
-          <input class="form__input form__input--radio visually-hidden" type="radio" id="two-product" value="two-product" name="products">
+          <input class="form__input form__input--radio visually-hidden"
+                 type="radio" id="two-product" value="2" name="products">
           <label class="form__label form__label--radio" for="two-product">
             <span class="form__radio-icon-wrapper">
               <span class="form__radio-icon-checked"></span>
@@ -88,7 +92,8 @@
           </label>
         </li>
         <li class="form__item">
-          <input class="form__input form__input--radio visually-hidden" type="radio" id="one-product" value="one-product" name="products">
+          <input class="form__input form__input--radio visually-hidden"
+                 type="radio" id="one-product" value="1" name="products">
           <label class="form__label form__label--radio" for="one-product">
             <span class="form__radio-icon-wrapper">
               <span class="form__radio-icon-checked"></span>
@@ -108,7 +113,7 @@
   <template id="product-template">
     <li class="product">
       <div class="product__header">
-        <span class="product__title">Product 3</span>
+        <span class="product__title">Product <span class="js-product-number"></span></span>
         <button class="product__remove" type="button">
           <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.49994 4.40454C6.24349 4.40454 6.03564 4.61239 6.03564 4.86883V10.1307C6.03564 10.3872 6.24349 10.595 6.49994 10.595C6.75638 10.595 6.96423 10.3872 6.96423 10.1307V4.86883C6.96423 4.61239 6.75638 4.40454 6.49994 4.40454Z" fill="#23C967"/>

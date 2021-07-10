@@ -14,11 +14,15 @@
 
   modalForm.addEventListener('submit', function (evt) {
     evt.preventDefault();
-
-    //
-    const product = productTemplate.cloneNode(true);
-    productList.appendChild(product);
-    //
+    const checkedInput = modalForm.querySelector('input:checked');
+    const productLength = productList.children.length;
+    for (let i = 1; i <= checkedInput.value; i++) {
+      const product = productTemplate.cloneNode(true);
+      const number = product.querySelector('.js-product-number');
+      const numberValue = productLength + i;
+      number.textContent = numberValue.toString();
+      productList.appendChild(product);
+    }
     modal.setAttribute('data-state', 'close');
   })
 })();
