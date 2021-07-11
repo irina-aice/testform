@@ -14,9 +14,9 @@
         <input type="email" placeholder="team@checkforpatent.com">
       </label>
       <ul class="js-product-list">
-        <li class="product">
+        <li class="product js-product">
           <div class="product__header">
-            <span class="product__title">Product 1</span>
+            <span class="product__title">Product <span class="js-product-number">1</span></span>
           </div>
           <label class="form__label">Enter main keyword for the product
             <input type="search" placeholder="for example, sylicon wine cup">
@@ -111,10 +111,10 @@
   </div>
 
   <template id="product-template">
-    <li class="product">
+    <li class="product js-product">
       <div class="product__header">
         <span class="product__title">Product <span class="js-product-number"></span></span>
-        <button class="product__remove" type="button">
+        <button class="product__remove js-product-remove" type="button">
           <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.49994 4.40454C6.24349 4.40454 6.03564 4.61239 6.03564 4.86883V10.1307C6.03564 10.3872 6.24349 10.595 6.49994 10.595C6.75638 10.595 6.96423 10.3872 6.96423 10.1307V4.86883C6.96423 4.61239 6.75638 4.40454 6.49994 4.40454Z" fill="#23C967"/>
             <path d="M9.13147 7.03564H3.86957C3.61312 7.03564 3.40527 7.24349 3.40527 7.49994C3.40527 7.75638 3.61312 7.96423 3.86957 7.96423H9.13147C9.38791 7.96423 9.59576 7.75638 9.59576 7.49994C9.59576 7.24349 9.38791 7.03564 9.13147 7.03564Z" fill="#23C967"/>

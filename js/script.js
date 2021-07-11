@@ -25,4 +25,23 @@
     }
     modal.setAttribute('data-state', 'close');
   })
+
+  const recalcProducts = function () {
+    const listElements = productList.querySelectorAll('.js-product');
+    for (let i = 0; i < listElements.length; i++) {
+      const listElement = listElements[i];
+      const productNumber = listElement.querySelector('.js-product-number');
+      const value = i + 1;
+      productNumber.textContent = value.toString();
+    }
+  }
+
+  productList.addEventListener('click', function (evt) {
+    if(!evt.target.closest('.js-product-remove')) {
+      return;
+    }
+    const productElement = evt.target.closest('.js-product');
+    productElement.remove();
+    recalcProducts();
+  })
 })();
